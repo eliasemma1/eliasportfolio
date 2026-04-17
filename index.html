@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emmanuel Elias — Mechanical & Design Engineer</title>
+  <meta name="description" content="Portfolio of Alex Morgan — Mechanical Design Engineer and Robotics Innovator." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div id="scroll-bar"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="bracket">[</span>AM<span>.</span><span class="bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <!-- icon injected by JS -->
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+
+          <!-- LEFT -->
+          <div>
+            <div class="hero-label">
+              <span class="dot"></span>
+              Available for opportunities
+            </div>
+
+            <h1 class="hero-name fade-in">
+              Emmanuel<br><em>Elias</em>
+            </h1>
+
+            <p class="hero-title fade-in">
+              Mechanical Engineer <span>//</span> Design Engineer <span>//</span> Builder
+            </p>
+
+            <p class="hero-bio fade-in">
+              I design machines that move, systems that think, and solutions that last. 
+              From CAD-driven precision parts to embedded robotics — I bridge the gap 
+              between engineering theory and real-world impact.
+            </p>
+
+            <div class="hero-ctas fade-in">
+              <a href="projects.html" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                View Projects
+              </a>
+              <a href="contact.html" class="btn btn-outline">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Contact Me
+              </a>
+            </div>
+
+            <div class="hero-stats fade-in">
+              <div>
+                <div class="hero-stat-num">12+</div>
+                <div class="hero-stat-label">Projects Built</div>
+              </div>
+              <div>
+                <div class="hero-stat-num">3</div>
+                <div class="hero-stat-label">CAD Tools</div>
+              </div>
+              <div>
+                <div class="hero-stat-num">2</div>
+                <div class="hero-stat-label">Competitions Won</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: featured card -->
+          <div class="hero-visual fade-in">
+            <div class="hero-card">
+              <div class="hero-card-img">
+                <div class="placeholder-img">
+                  <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                    <circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                  </svg>
+                  <span>Featured Project Render</span>
+                </div>
+              </div>
+              <div class="hero-card-body">
+                <h3>Autonomous Ground Robot</h3>
+                <p>6-DOF mobile platform with sensor fusion, Arduino mega, and custom chassis designed in SolidWorks.</p>
+                <div class="hero-card-tags">
+                  <span class="tag accent">Robotics</span>
+                  <span class="tag">SolidWorks</span>
+                  <span class="tag">Arduino</span>
+                </div>
+              </div>
+              <div class="corner-br"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ── FEATURED PROJECTS ── -->
+    <section id="projects">
+      <div class="container">
+        <div class="featured-header">
+          <div>
+            <div class="section-label">Selected Work</div>
+            <h2 class="section-title">Featured Projects</h2>
+          </div>
+          <a href="projects.html" class="btn btn-outline">
+            All Projects
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Card 1 -->
+          <article class="project-card fade-in">
+            <div class="card-img">
+              <div class="placeholder-img">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg>
+                <span>AGV Chassis Render</span>
+              </div>
+              <span class="card-num">01</span>
+            </div>
+            <div class="card-body">
+              <h3>Autonomous Ground Vehicle (AGV)</h3>
+              <p>Designed a fully custom chassis, drivetrain, and sensor mount system for an autonomous mobile robot using SolidWorks and Arduino.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tags">
+                <span class="tag accent">Robotics</span>
+                <span class="tag">SolidWorks</span>
+              </div>
+              <a href="project-detail.html" class="card-arrow" aria-label="View project">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card fade-in">
+            <div class="card-img">
+              <div class="placeholder-img">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <span>3-DOF Arm Assembly</span>
+              </div>
+              <span class="card-num">02</span>
+            </div>
+            <div class="card-body">
+              <h3>3-DOF Robotic Arm</h3>
+              <p>Servo-actuated 3-degree-of-freedom manipulator with custom 3D-printed joints, inverse kinematics solver, and pick-and-place capability.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tags">
+                <span class="tag accent">Mechatronics</span>
+                <span class="tag">Blender</span>
+              </div>
+              <a href="project-detail.html" class="card-arrow" aria-label="View project">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="project-card fade-in">
+            <div class="card-img">
+              <div class="placeholder-img">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+                <span>Drone Frame CAD</span>
+              </div>
+              <span class="card-num">03</span>
+            </div>
+            <div class="card-body">
+              <h3>Quadcopter Airframe Design</h3>
+              <p>Lightweight carbon-composite-inspired quadcopter frame designed for high structural rigidity with minimal weight penalty. FEA validated.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tags">
+                <span class="tag accent">Aerospace</span>
+                <span class="tag">FEA</span>
+              </div>
+              <a href="project-detail.html" class="card-arrow" aria-label="View project">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="project-card fade-in">
+            <div class="card-img">
+              <div class="placeholder-img">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>Exo-Joint CAD View</span>
+              </div>
+              <span class="card-num">04</span>
+            </div>
+            <div class="card-body">
+              <h3>Assistive Exoskeleton Joint</h3>
+              <p>Bio-inspired knee exoskeleton joint with compliant mechanism design, 3D-printed polylactic acid structure, and passive energy storage.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tags">
+                <span class="tag accent">Biomechanics</span>
+                <span class="tag">SolidWorks</span>
+              </div>
+              <a href="project-detail.html" class="card-arrow" aria-label="View project">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ── SKILLS ── -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-label">Core Competencies</div>
+        <h2 class="section-title">Skills &amp; Toolset</h2>
+        <p class="section-sub">From digital design to physical prototype — I work across the full engineering development cycle.</p>
+
+        <div class="skills-wrap">
+
+          <div class="skill-card fade-in">
+            <div class="skill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3>CAD Design</h3>
+            <p>Parametric 3D modelling, assemblies, technical drawings, and design-for-manufacture in industry-standard tools.</p>
+            <div class="skill-tools">
+              <span class="tag accent">SolidWorks</span>
+              <span class="tag">Blender</span>
+              <span class="tag">AutoCAD</span>
+            </div>
+          </div>
+
+          <div class="skill-card fade-in">
+            <div class="skill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg>
+            </div>
+            <h3>Robotics &amp; Embedded</h3>
+            <p>Sensor integration, motor control, real-time firmware, and full mechatronic system design from scratch.</p>
+            <div class="skill-tools">
+              <span class="tag accent">Arduino</span>
+              <span class="tag">Raspberry Pi</span>
+              <span class="tag">C/C++</span>
+            </div>
+          </div>
+
+          <div class="skill-card fade-in">
+            <div class="skill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Engineering Analysis</h3>
+            <p>Finite Element Analysis, stress simulation, tolerance stack-up, and design validation against real-world loads.</p>
+            <div class="skill-tools">
+              <span class="tag accent">FEA</span>
+              <span class="tag">ANSYS</span>
+              <span class="tag">SimScale</span>
+            </div>
+          </div>
+
+          <div class="skill-card fade-in">
+            <div class="skill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Rapid Prototyping</h3>
+            <p>FDM/SLA 3D printing, laser cutting, CNC milling — turning digital designs into physical, testable prototypes fast.</p>
+            <div class="skill-tools">
+              <span class="tag accent">3D Printing</span>
+              <span class="tag">Laser Cut</span>
+              <span class="tag">CNC</span>
+            </div>
+          </div>
+
+          <div class="skill-card fade-in">
+            <div class="skill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Programming</h3>
+            <p>From low-level microcontroller code to data visualisation and simulation scripting for engineering insights.</p>
+            <div class="skill-tools">
+              <span class="tag accent">Python</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">C++</span>
+            </div>
+          </div>
+
+          <div class="skill-card fade-in">
+            <div class="skill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Team &amp; Project Management</h3>
+            <p>Engineering documentation, BOM management, Gantt scheduling, and cross-functional team collaboration on builds.</p>
+            <div class="skill-tools">
+              <span class="tag accent">Agile</span>
+              <span class="tag">Notion</span>
+              <span class="tag">Git</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">[AM<span>.</span>]</div>
+        <p class="footer-copy">© 2025 Alex Morgan — All Rights Reserved</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

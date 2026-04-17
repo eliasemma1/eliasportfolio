@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autonomous Ground Vehicle — Alex Morgan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <div id="scroll-bar"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="bracket">[</span>AM<span>.</span><span class="bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <div class="container">
+
+      <!-- BREADCRUMB -->
+      <div class="breadcrumb fade-in">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <a href="projects.html">Projects</a>
+        <span class="sep">/</span>
+        <span class="current">Autonomous Ground Vehicle</span>
+      </div>
+
+      <!-- PROJECT HERO -->
+      <div class="project-hero fade-in">
+        <div class="project-hero-meta">
+          <span class="tag accent">Robotics</span>
+          <span class="tag">SolidWorks</span>
+          <span class="tag">Arduino</span>
+          <span class="tag">Embedded Systems</span>
+        </div>
+
+        <h1>Autonomous Ground Vehicle<br>(AGV) — Competition Build</h1>
+
+        <p>
+          A fully custom-designed autonomous mobile robot built for the West African University 
+          Robotics Challenge. The system integrates a purpose-built chassis, differential drivetrain, 
+          ultrasonic sensor array, and Arduino Mega control unit into a cohesive, competition-ready platform.
+        </p>
+
+        <div class="project-hero-footer">
+          <div class="meta-item">
+            <div>
+              <div class="meta-label">Year</div>
+              <div class="meta-val">2023</div>
+            </div>
+          </div>
+          <div class="meta-item">
+            <div>
+              <div class="meta-label">Duration</div>
+              <div class="meta-val">14 Weeks</div>
+            </div>
+          </div>
+          <div class="meta-item">
+            <div>
+              <div class="meta-label">Role</div>
+              <div class="meta-val">Lead Designer &amp; Engineer</div>
+            </div>
+          </div>
+          <div class="meta-item">
+            <div>
+              <div class="meta-label">Result</div>
+              <div class="meta-val">2nd Place — WAURC 2023</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COVER IMAGE -->
+      <div class="project-cover fade-in">
+        <div class="placeholder-img">
+          <svg width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+            <circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+          </svg>
+          <span>Primary Render — Full AGV Assembly</span>
+        </div>
+      </div>
+
+      <!-- DETAIL GRID: main content + sidebar -->
+      <div class="detail-grid">
+
+        <!-- MAIN CONTENT -->
+        <div>
+
+          <!-- ── 01. WHAT ── -->
+          <div class="detail-section fade-in">
+            <h2>
+              <span class="section-num">01</span>
+              The Problem
+            </h2>
+            <p>
+              The challenge brief required a robot capable of <strong>autonomous navigation through 
+              a structured obstacle course</strong> — stopping at checkpoints, avoiding collisions, 
+              and completing the route within a 90-second time limit.
+            </p>
+            <p>
+              The core engineering problem: build a robot that is <strong>mechanically reliable, 
+              electronically responsive, and light enough to move quickly</strong> — all within a 
+              strict bill of materials budget and without access to expensive off-the-shelf chassis solutions.
+            </p>
+            <p>
+              Most teams purchased pre-built chassis kits. We chose to <strong>design everything from 
+              scratch</strong>, which gave us full control over geometry, sensor placement, centre of mass, 
+              and repairability during the competition.
+            </p>
+          </div>
+
+          <!-- ── 02. HOW ── -->
+          <div class="detail-section fade-in">
+            <h2>
+              <span class="section-num">02</span>
+              Design Process
+            </h2>
+            <p>
+              The project followed a structured engineering design cycle: <strong>requirements definition → 
+              concept sketching → CAD modelling → manufacturing → assembly → testing → iteration</strong>.
+            </p>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:700;margin:1.5rem 0 0.75rem;color:var(--text);">
+              Concept &amp; Sketching
+            </h3>
+            <p>
+              Early-stage concept sketches explored three chassis configurations: 
+              4-wheel differential, 3-wheel with central pivot, and a 6-wheel skid-steer layout. 
+              The 4-wheel differential was selected for its predictable kinematics and mechanical simplicity.
+            </p>
+
+            <!-- SKETCH GALLERY -->
+            <div class="gallery">
+              <div class="gallery-item">
+                <div class="placeholder-img">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                  <span>Concept Sketch A</span>
+                </div>
+              </div>
+              <div class="gallery-item">
+                <div class="placeholder-img">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                  <span>Concept Sketch B</span>
+                </div>
+              </div>
+              <div class="gallery-item">
+                <div class="placeholder-img">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                  <span>Layout Study</span>
+                </div>
+              </div>
+            </div>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:700;margin:1.5rem 0 0.75rem;color:var(--text);">
+              CAD Modelling — SolidWorks
+            </h3>
+            <p>
+              The full assembly was modelled in <strong>SolidWorks 2023</strong>. The chassis consisted 
+              of 17 unique parts: aluminium frame extrusions, custom motor mounts, wheel hubs, sensor 
+              brackets, and an electronics tray. All parts were designed for <strong>FDM 3D printing or 
+              laser-cut aluminium sheet</strong>.
+            </p>
+            <p>
+              The design used a <strong>parametric approach</strong>: key dimensions (wheelbase, track width, 
+              ground clearance) were set as global variables so the whole model could be scaled or adjusted 
+              without individual part edits.
+            </p>
+
+            <!-- CAD GALLERY -->
+            <div class="gallery">
+              <div class="gallery-item">
+                <div class="placeholder-img">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                  <span>Top-View Assembly</span>
+                </div>
+              </div>
+              <div class="gallery-item">
+                <div class="placeholder-img">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                  <span>Exploded View</span>
+                </div>
+              </div>
+              <div class="gallery-item">
+                <div class="placeholder-img">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                  <span>Section Cut View</span>
+                </div>
+              </div>
+              <div class="gallery-item">
+                <div class="placeholder-img">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                  <span>Motor Mount Detail</span>
+                </div>
+              </div>
+            </div>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:700;margin:1.5rem 0 0.75rem;color:var(--text);">
+              Electronics &amp; Firmware
+            </h3>
+            <p>
+              The control stack ran on an <strong>Arduino Mega 2560</strong> with 5 HC-SR04 ultrasonic 
+              sensors (front, front-left, front-right, rear-left, rear-right) feeding a simple 
+              reactive obstacle-avoidance algorithm written in C++. Two N20 geared DC motors were 
+              driven via an L298N dual H-bridge motor driver.
+            </p>
+            <p>
+              A secondary <strong>IR line-following array</strong> allowed checkpoint detection on the 
+              competition floor markings. The firmware used a finite state machine (FSM) architecture: 
+              LINE_FOLLOW → OBSTACLE_AVOID → CHECKPOINT_STOP states.
+            </p>
+          </div>
+
+          <!-- ── 03. RESULTS ── -->
+          <div class="detail-section fade-in">
+            <h2>
+              <span class="section-num">03</span>
+              Results &amp; Outcomes
+            </h2>
+
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value">2nd</div>
+                <div class="metric-label">Competition Place</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value">78s</div>
+                <div class="metric-label">Course Completion</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value">0</div>
+                <div class="metric-label">Collisions (3 runs)</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value">640g</div>
+                <div class="metric-label">Final Assembly Mass</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value">17</div>
+                <div class="metric-label">Unique CAD Parts</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value">14wk</div>
+                <div class="metric-label">Design to Competition</div>
+              </div>
+            </div>
+
+            <p>
+              The robot successfully completed all 3 qualifying runs without collision, placing 2nd 
+              overall out of 14 competing teams. The <strong>custom chassis outperformed several 
+              kit-based platforms</strong> in manoeuvrability and proved significantly easier to repair 
+              between runs due to modular part design.
+            </p>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:700;margin:1.75rem 0 1rem;color:var(--text);">
+              Lessons Learned
+            </h3>
+
+            <div class="lessons-list">
+              <div class="lesson-item">
+                <div class="lesson-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                </div>
+                <p><strong>Parametric CAD saves time under pressure.</strong> Having global variables meant we could resize the wheelbase in 20 minutes when the competition surface turned out to be narrower than expected.</p>
+              </div>
+              <div class="lesson-item">
+                <div class="lesson-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                </div>
+                <p><strong>Sensor placement is a mechanical problem.</strong> The front sensor geometry created a blind spot in early tests — a physical problem solved by redesigning the mounting bracket angle, not the code.</p>
+              </div>
+              <div class="lesson-item">
+                <div class="lesson-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                </div>
+                <p><strong>Centre of mass matters at competition speeds.</strong> An early iteration with top-heavy electronics tray caused tipping on sharp turns. Moving the battery pack lower cut tipping incidents to zero.</p>
+              </div>
+              <div class="lesson-item">
+                <div class="lesson-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                </div>
+                <p><strong>Document as you build, not after.</strong> Retroactive assembly documentation consumed nearly 6 hours. Future projects will follow parallel design-documentation workflow.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- NAVIGATION BETWEEN PROJECTS -->
+          <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-top:2rem;border-top:1px solid var(--border);margin-top:1rem;" class="fade-in">
+            <a href="projects.html" class="btn btn-outline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              All Projects
+            </a>
+            <a href="project-detail.html" class="btn btn-outline">
+              Next Project
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+        </div><!-- /main content -->
+
+        <!-- SIDEBAR -->
+        <aside class="detail-sidebar fade-in">
+
+          <div class="sidebar-box">
+            <h4>Tools &amp; Technologies</h4>
+            <ul>
+              <li>SolidWorks 2023</li>
+              <li>Arduino IDE</li>
+              <li>C++ Firmware</li>
+              <li>FDM 3D Printing (PLA)</li>
+              <li>Laser Cut Aluminium</li>
+              <li>L298N Motor Driver</li>
+              <li>HC-SR04 Ultrasonic</li>
+              <li>IR Array Sensor</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box">
+            <h4>Project Scope</h4>
+            <ul>
+              <li>Mechanical Design</li>
+              <li>CAD Modelling</li>
+              <li>Firmware Development</li>
+              <li>Prototyping &amp; Assembly</li>
+              <li>Testing &amp; Iteration</li>
+              <li>Competition Deployment</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box">
+            <h4>Team</h4>
+            <ul>
+              <li>Alex Morgan — Lead</li>
+              <li>5 Team Members</li>
+              <li>UniLag Robotics Club</li>
+            </ul>
+          </div>
+
+          <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:0.25rem;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Discuss This Project
+          </a>
+
+        </aside>
+
+      </div><!-- /detail-grid -->
+    </div><!-- /container -->
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">[AM<span>.</span>]</div>
+        <p class="footer-copy">© 2025 Alex Morgan — All Rights Reserved</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Alex Morgan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <div id="scroll-bar"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="bracket">[</span>AM<span>.</span><span class="bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner fade-in">
+          <div>
+            <div class="section-label">Portfolio</div>
+            <h1>All Projects</h1>
+          </div>
+          <p class="section-sub" style="max-width:400px; margin:0;">
+            A complete record of engineering builds — from concept sketch to working prototype.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+
+        <!-- FILTER BAR -->
+        <div class="filter-bar fade-in">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="robotics">Robotics</button>
+          <button class="filter-btn" data-filter="cad">CAD / Design</button>
+          <button class="filter-btn" data-filter="embedded">Embedded Systems</button>
+          <button class="filter-btn" data-filter="aerospace">Aerospace</button>
+          <button class="filter-btn" data-filter="biomech">Biomechanics</button>
+        </div>
+
+        <!-- PROJECTS GRID -->
+        <div class="projects-grid-full">
+
+          <article class="project-card fade-in" data-category="robotics embedded">
+            <div class="card-img">
+              <div class="placeholder-img">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg>
+                <span>AGV Chassis Render</span>
+              </div>
+              <span class="card-num">01</span>
+            </div>
+            <div class="card-body">
+              <h3>Autonomous Ground Vehicle (AGV)</h3>
+              <p>Custom chassis, drivetrain, and sensor mount for autonomous navigation. Arduino Mega + ultrasonic sensor fusion.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tags">
+                <span class="tag accent">Robotics</span>
+                <span class="tag">SolidWorks</span>
+                <span class="tag">Arduino</span>
+              </div>
+              <a href="project-detail.html" class="card-arrow" aria-label="View project">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="robotics cad embedded">
+            <div class="card-img">
+              <div class="placeholder-img">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
+                <span>3-DOF Arm Assembly</span>
+              </div>
+              <span class="card-num">02</span>
+            </div>
+            <div class="card-body">
+              <h3>3-DOF Robotic Arm</h3>
+              <p>Servo-actuated manipulator with inverse kinematics solver and 3D-printed joints. Pick-and-place capable with 0.5 kg payload.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tags">
+                <span class="tag accent">Mechatronics</span>
+                <span class="tag">Blender</span>
+              </div>
+              <a href="project-detail.html" class="card-arrow" aria-label="View project">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="aerospace cad">
+            <div class="card-img">
+              <div class="placeholder-img">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                <span>Drone Frame — Exploded View</span>
+              </div>
+              <span class="card-num">03</span>
+            </div>
+            <div class="card-body">
+              <h3>Quadcopter Airframe Design</h3>
+              <p>Lightweight composite-inspired frame with FEA-validated stress analysis. 35% weight reduction vs reference design.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tags">
+                <span class="tag accent">Aerospace</span>
+                <span class="tag">FEA</span>
+                <span class="tag">SolidWorks</span>
+              </div>
+              <a href="project-detail.html" class="card-arrow" aria-label="View project">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="biomech cad">
+            <div class="card-img">
+              <div class="placeholder-img">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>Exo-Joint Side View</span>
+              </div>
+              <span class="card-num">04</span>
+            </div>
+            <div class="card-body">
+              <h3>Assistive Exoskeleton Joint</h3>
+              <p>Bio-inspired compliant knee joint with passive energy storage. Competition award winner at National Engineering Expo 2023.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tags">
+                <span class="tag accent">Biomechanics</span>
+                <span class="tag">SolidWorks</span>
+              </div>
+              <a href="project-detail.html" class="card-arrow" aria-label="View project">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="embedded robotics">
+            <div class="card-img">
+              <div class="placeholder-img">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+                <span>PCB / Sensor Array</span>
+              </div>
+              <span class="card-num">05</span>
+            </div>
+            <div class="card-body">
+              <h3>Smart Environmental Monitor</h3>
+              <p>IoT-enabled sensor node with temperature, humidity, CO2 and particulate measurement. Custom enclosure design and wireless data logging.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tags">
+                <span class="tag accent">Embedded</span>
+                <span class="tag">IoT</span>
+                <span class="tag">Arduino</span>
+              </div>
+              <a href="project-detail.html" class="card-arrow" aria-label="View project">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="cad robotics">
+            <div class="card-img">
+              <div class="placeholder-img">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 2a7 7 0 1 1 0 14A7 7 0 0 1 12 2zm0 3v4l3 3"/><path d="M5 19l-2 2M19 19l2 2M12 22v-2"/></svg>
+                <span>Soft Gripper Render</span>
+              </div>
+              <span class="card-num">06</span>
+            </div>
+            <div class="card-body">
+              <h3>Bio-Inspired Soft Gripper</h3>
+              <p>Final-year design project: silicone-based pneumatic soft gripper inspired by octopus tentacles. Handles fragile objects without pressure sensors.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tags">
+                <span class="tag accent">Soft Robotics</span>
+                <span class="tag">Blender</span>
+              </div>
+              <a href="project-detail.html" class="card-arrow" aria-label="View project">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">[AM<span>.</span>]</div>
+        <p class="footer-copy">© 2025 Alex Morgan — All Rights Reserved</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
