@@ -102,7 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ── CONTACT FORM ─────────────────────────────────────────── */
-  const form = document.querySelector('.contact-form form');
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
